@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#101827"><title>سیگنال‌یار توبیت</title>
+<link rel="manifest" href="/manifest.json"><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header><div><div class="brand">سیگنال‌یار توبیت</div><div class="sub">تحلیل بازار · بدون اجرای سفارش</div></div><button id="notifyBtn" class="secondary">فعال‌کردن اعلان</button></header>
+<main>
+<section class="panel controls">
+<label>بازار<select id="market"><option value="spot">اسپات</option><option value="futures">فیوچرز USDT-M</option></select></label>
+<label>ارز<select id="symbol"></select></label>
+<label>تایم‌فریم<select id="interval"><option value="1h">۱ ساعت</option><option value="2h">۲ ساعت</option><option value="4h" selected>۴ ساعت</option><option value="1d">روزانه</option></select></label>
+<button id="analyzeBtn">تحلیل بازار</button>
+<button id="reportBtn" class="secondary">گزارش روزانه</button>
+</section>
+<div id="status" class="status">برای دریافت داده واقعی، روی «تحلیل بازار» بزن.</div>
+<section id="result" class="panel result hidden"></section>
+<section class="panel">
+<div class="sectionHead"><h2>قیمت و تغییرات CoinMarketCap</h2><button id="cmcBtn" class="secondary">به‌روزرسانی</button></div>
+<div id="cmc" class="cmcGrid"><div class="muted">برای بارگذاری قیمت‌ها، به‌روزرسانی را بزن.</div></div>
+</section>
+<section class="panel">
+<h2>گزارش و هشدارها</h2><div class="muted small">هشدارهای داخل مرورگر زمانی کار می‌کنند که صفحه باز باشد. برای اعلان پایدار در پس‌زمینه به سرور زمان‌بندی‌شده و سرویس Push نیاز است.</div>
+<div id="alerts" class="alerts"><div class="muted">هنوز هشداری ثبت نشده است.</div></div>
+</section>
+<section class="panel safety"><strong>توجه به ریسک</strong><p>سیگنال‌ها بر اساس قواعد تکنیکال ساده تولید می‌شوند و سودآوری را تضمین نمی‌کنند. داده‌های فیوچرز از کندل قیمت مارک استفاده می‌کنند؛ پیش از معامله، قیمت قرارداد، کارمزد، فاندینگ و نقدشوندگی را در توبیت بررسی کن. این برنامه سفارش ثبت نمی‌کند.</p></section>
+<footer>نسخه آزمایشی · داده‌های عمومی بازار · <span id="updated">به‌روزرسانی نشده</span></footer>
+</main>
+<script src="/app.js"></script>
+</body></html>
